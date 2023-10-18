@@ -1,0 +1,41 @@
+﻿<Window x:Name="window" x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="434" Width="345" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
+    <Grid x:Name="MainRoot">
+        <TextBlock x:Name="TBone" HorizontalAlignment="Left" Margin="121,28,0,0" Text="TextBlock" VerticalAlignment="Top" FontSize="20" TextAlignment="Center" Width="214" Height="43" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" FontFamily="MV Boli"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="40*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            <Button Content="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="40" Height="40" Click="ButtonOne_Click"/>
+            <Button Content="2" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="1"/>
+            <Button Content="3" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="2"/>
+            <Button Content="4" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Width="40" Height="40" Margin="0,17,0,0"/>
+            <Button Content="5" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="1"/>
+            <Button Content="6" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="2"/>
+            <Button Content="7" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="40" Height="40"/>
+            <Button Content="8" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="1"/>
+            <Button Content="9" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="2"/>
+            <Button Content="0" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="1"/>
+            <Button x:Name="Plus" Content="+" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="3" Click="Plus_Click"/>
+            <Button x:Name="Equals" Content="=" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="40" Height="40" Grid.Column="2" />
+
+        </Grid>
+    </Grid>
+</Window>
